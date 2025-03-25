@@ -149,6 +149,7 @@ torchvision = [
 ]
 
 [tool.poetry.extras]
+onnxtr = ["onnxtr"]
 tesserocr = ["tesserocr"]
 ocrmac = ["ocrmac"]
 vlm = ["transformers", "accelerate"]
@@ -193,6 +194,7 @@ module = [
   "docling_ibm_models.*",
   "easyocr.*",
   "ocrmac.*",
+  "onnxtr.*",
   "mlx_vlm.*",
   "lxml.*",
   "huggingface_hub.*",

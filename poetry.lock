@@ -7821,6 +7821,7 @@ type = ["pytest-mypy"]
 
 [extras]
 ocrmac = ["ocrmac"]
+onnxtr = ["onnxtr"]
 rapidocr = ["onnxruntime", "onnxruntime", "rapidocr-onnxruntime"]
 tesserocr = ["tesserocr"]
 vlm = ["accelerate", "transformers", "transformers"]
@@ -7828,4 +7829,4 @@ vlm = ["accelerate", "transformers", "transformers"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "30e6d3454e250a0529c33d1754903f647b93380a34bee0ee0787654a36bb7b51"
+content-hash = "d6b41b088e81e423dafcf534b46a3eda2aeccaebcf7ce7d2c7079c7bd74bab88"
