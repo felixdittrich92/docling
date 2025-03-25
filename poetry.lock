@@ -187,7 +187,7 @@ description = "Unicode to ASCII transliteration"
 optional = true
 python-versions = ">=3.3"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\""
+markers = "python_version >= \"3.10\" and python_version < \"3.13\""
 files = [
     {file = "anyascii-0.3.2-py3-none-any.whl", hash = "sha256:3b3beef6fc43d9036d3b0529050b0c48bfad8bc960e9e562d7223cfb94fe45d4"},
     {file = "anyascii-0.3.2.tar.gz", hash = "sha256:9d5d32ef844fe225b8bc7cba7f950534fae4da27a9bf3a6bea2cb0ea46ce4730"},
@@ -750,7 +750,7 @@ description = "Colored terminal output for Python's logging module"
 optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 groups = ["main"]
-markers = "extra == \"rapidocr\" or python_version == \"3.11\" or python_version == \"3.12\" or python_version == \"3.10\""
+markers = "extra == \"rapidocr\" or python_version < \"3.13\" and python_version >= \"3.10\""
 files = [
     {file = "coloredlogs-15.0.1-py2.py3-none-any.whl", hash = "sha256:612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934"},
     {file = "coloredlogs-15.0.1.tar.gz", hash = "sha256:7c991aa71a4577af2f82600d8f8f3a89f936baeaf9b50a9c197da014e5bf16b0"},
@@ -998,7 +998,7 @@ files = [
     {file = "defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61"},
     {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
 ]
-markers = {main = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\"", docs = "platform_system == \"Linux\" and sys_platform == \"darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or platform_machine == \"aarch64\" and platform_system == \"Linux\" or platform_machine == \"x86_64\" and sys_platform == \"darwin\""}
+markers = {main = "python_version >= \"3.10\" and python_version < \"3.13\"", docs = "platform_system == \"Linux\" and sys_platform == \"darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or platform_machine == \"aarch64\" and platform_system == \"Linux\" or platform_machine == \"x86_64\" and sys_platform == \"darwin\""}
 
 [[package]]
 name = "dill"
@@ -1343,7 +1343,7 @@ description = "The FlatBuffers serialization format for Python"
 optional = true
 python-versions = "*"
 groups = ["main"]
-markers = "extra == \"rapidocr\" or python_version == \"3.11\" or python_version == \"3.12\" or python_version == \"3.10\""
+markers = "extra == \"rapidocr\" or python_version < \"3.13\" and python_version >= \"3.10\""
 files = [
     {file = "flatbuffers-25.2.10-py2.py3-none-any.whl", hash = "sha256:ebba5f4d5ea615af3f7fd70fc310636fbb2bbd1f566ac0a23d98dd412de50051"},
     {file = "flatbuffers-25.2.10.tar.gz", hash = "sha256:97e451377a41262f8d9bd4295cc836133415cc03d8cb966410a4af92eb00d26e"},
@@ -1757,7 +1757,7 @@ description = "Human friendly output for text interfaces using Python"
 optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 groups = ["main"]
-markers = "extra == \"rapidocr\" or python_version == \"3.11\" or python_version == \"3.12\" or python_version == \"3.10\""
+markers = "extra == \"rapidocr\" or python_version < \"3.13\" and python_version >= \"3.10\""
 files = [
     {file = "humanfriendly-10.0-py2.py3-none-any.whl", hash = "sha256:1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477"},
     {file = "humanfriendly-10.0.tar.gz", hash = "sha256:6b0b831ce8f15f7300721aa49829fc4e83921a9a301cc7f606be6686a2288ddc"},
@@ -2557,7 +2557,7 @@ description = "Language detection library ported from Google's language-detectio
 optional = true
 python-versions = "*"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\""
+markers = "python_version >= \"3.10\" and python_version < \"3.13\""
 files = [
     {file = "langdetect-1.0.9-py2-none-any.whl", hash = "sha256:7cbc0746252f19e76f77c0b1690aadf01963be835ef0cd4b56dddf2a8f1dfc2a"},
     {file = "langdetect-1.0.9.tar.gz", hash = "sha256:cbc1fef89f8d062739774bd51eda3da3274006b3661d199c2655f6b3f6d605a0"},
@@ -4454,7 +4454,7 @@ description = "ONNX Runtime is a runtime accelerator for Machine Learning models
 optional = true
 python-versions = ">=3.10"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\""
+markers = "python_version >= \"3.10\" and python_version < \"3.13\""
 files = [
     {file = "onnxruntime_gpu-1.21.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bb9428bf56d822db9d423ab88ff0a439aa9192db711b45160650745cb7bc9bbd"},
     {file = "onnxruntime_gpu-1.21.0-cp310-cp310-win_amd64.whl", hash = "sha256:31ea762c03a972ad0807d1cacda7702ea686731119f8ab9132be8b3a9ef3eae0"},
@@ -4486,7 +4486,7 @@ description = "Onnx Text Recognition (OnnxTR): docTR Onnx-Wrapper for high-perfo
 optional = true
 python-versions = "<4,>=3.10.0"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\""
+markers = "python_version >= \"3.10\" and python_version < \"3.13\""
 files = [
     {file = "onnxtr-0.6.2-py3-none-any.whl", hash = "sha256:795000f66c7285761a762601850d32374d4b62f92ea3f8e02ce9460927353592"},
     {file = "onnxtr-0.6.2.tar.gz", hash = "sha256:318864acc2e6075bc7fc10a4dc0437a3c5bd4feb4ee2982871931517c45ce55c"},
@@ -4528,7 +4528,7 @@ description = "Wrapper package for OpenCV python bindings."
 optional = true
 python-versions = ">=3.6"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\" or python_version == \"3.9\" and extra == \"rapidocr\" or sys_platform == \"darwin\" and python_version <= \"3.12\" and extra == \"rapidocr\" and platform_system == \"Linux\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or sys_platform == \"darwin\" and python_version <= \"3.12\" and extra == \"rapidocr\" and platform_machine == \"x86_64\" or platform_machine == \"aarch64\" and python_version <= \"3.12\" and extra == \"rapidocr\" and platform_system == \"Linux\""
+markers = "sys_platform == \"darwin\" and (extra == \"rapidocr\" or python_version >= \"3.10\") and platform_machine == \"x86_64\" and python_version < \"3.13\""
 files = [
     {file = "opencv-python-4.11.0.86.tar.gz", hash = "sha256:03d60ccae62304860d232272e4a4fda93c39d595780cb40b161b310244b736a4"},
     {file = "opencv_python-4.11.0.86-cp37-abi3-macosx_13_0_arm64.whl", hash = "sha256:432f67c223f1dc2824f5e73cdfcd9db0efc8710647d4e813012195dc9122a52a"},
@@ -4543,8 +4543,8 @@ files = [
 numpy = [
     {version = ">=1.21.4", markers = "python_version >= \"3.10\" and platform_system == \"Darwin\""},
     {version = ">=1.21.2", markers = "platform_system != \"Darwin\" and python_version >= \"3.10\""},
-    {version = ">=1.23.5", markers = "python_version >= \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+    {version = ">=1.23.5", markers = "python_version == \"3.11\""},
     {version = ">=1.21.0", markers = "python_version == \"3.9\" and platform_system == \"Darwin\" and platform_machine == \"arm64\""},
     {version = ">=1.19.3", markers = "(python_version >= \"3.8\" and platform_system == \"Linux\" and platform_machine == \"aarch64\" or python_version >= \"3.9\") and (python_version > \"3.9\" or platform_system != \"Darwin\" or platform_machine != \"arm64\")"},
 ]
@@ -4571,8 +4571,8 @@ files = [
 numpy = [
     {version = ">=1.21.4", markers = "python_version >= \"3.10\" and platform_system == \"Darwin\""},
     {version = ">=1.21.2", markers = "platform_system != \"Darwin\" and python_version >= \"3.10\""},
-    {version = ">=1.23.5", markers = "python_version >= \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+    {version = ">=1.23.5", markers = "python_version >= \"3.11\""},
     {version = ">=1.21.0", markers = "python_version == \"3.9\" and platform_system == \"Darwin\" and platform_machine == \"arm64\""},
     {version = ">=1.19.3", markers = "(python_version >= \"3.8\" and platform_system == \"Linux\" and platform_machine == \"aarch64\" or python_version >= \"3.9\") and (python_version > \"3.9\" or platform_system != \"Darwin\" or platform_machine != \"arm64\")"},
 ]
@@ -4779,8 +4779,8 @@ files = [
 [package.dependencies]
 numpy = [
     {version = ">=1.22.4", markers = "python_version < \"3.11\""},
-    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
 ]
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
@@ -5227,7 +5227,7 @@ files = [
     {file = "protobuf-6.30.1-py3-none-any.whl", hash = "sha256:3c25e51e1359f1f5fa3b298faa6016e650d148f214db2e47671131b9063c53be"},
     {file = "protobuf-6.30.1.tar.gz", hash = "sha256:535fb4e44d0236893d5cf1263a0f706f1160b689a7ab962e9da8a9ce4050b780"},
 ]
-markers = {main = "extra == \"rapidocr\" or python_version == \"3.11\" or python_version == \"3.12\" or python_version == \"3.10\"", examples = "platform_system == \"Linux\" and sys_platform == \"darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or platform_machine == \"aarch64\" and platform_system == \"Linux\" or platform_machine == \"x86_64\" and sys_platform == \"darwin\""}
+markers = {main = "extra == \"rapidocr\" or python_version < \"3.13\" and python_version >= \"3.10\"", examples = "platform_system == \"Linux\" and sys_platform == \"darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or platform_machine == \"aarch64\" and platform_system == \"Linux\" or platform_machine == \"x86_64\" and sys_platform == \"darwin\""}
 
 [[package]]
 name = "psutil"
@@ -5858,7 +5858,7 @@ description = "A python implementation of GNU readline."
 optional = true
 python-versions = ">=3.8"
 groups = ["main"]
-markers = "sys_platform == \"win32\" and python_version == \"3.10\" or sys_platform == \"win32\" and python_version == \"3.11\" or sys_platform == \"win32\" and python_version == \"3.12\" or sys_platform == \"win32\" and extra == \"rapidocr\""
+markers = "sys_platform == \"win32\" and (python_version < \"3.13\" or extra == \"rapidocr\") and platform_machine == \"aarch64\" and (python_version >= \"3.10\" or extra == \"rapidocr\") and platform_system == \"Linux\""
 files = [
     {file = "pyreadline3-3.5.4-py3-none-any.whl", hash = "sha256:eaf8e6cc3c49bcccf145fc6067ba8643d1df34d604a1ec0eccbf7a18e6d3fae6"},
     {file = "pyreadline3-3.5.4.tar.gz", hash = "sha256:8d57d53039a1c75adba8e50dd3d992b28143480816187ea5efbd5c78e6c885b7"},
@@ -6423,7 +6423,7 @@ description = "rapid fuzzy string matching"
 optional = true
 python-versions = ">=3.9"
 groups = ["main"]
-markers = "python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\""
+markers = "python_version >= \"3.10\" and python_version < \"3.13\""
 files = [
     {file = "rapidfuzz-3.12.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:0b9a75e0385a861178adf59e86d6616cbd0d5adca7228dc9eeabf6f62cf5b0b1"},
     {file = "rapidfuzz-3.12.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:6906a7eb458731e3dd2495af1d0410e23a21a2a2b7ced535e6d5cd15cb69afc5"},
@@ -6531,7 +6531,7 @@ description = "A cross platform OCR Library based on OnnxRuntime."
 optional = true
 python-versions = "<3.13,>=3.6"
 groups = ["main"]
-markers = "(python_version == \"3.10\" or python_version == \"3.11\" or python_version == \"3.12\") and extra == \"rapidocr\" or python_version == \"3.9\" and extra == \"rapidocr\" or sys_platform == \"darwin\" and python_version < \"3.10\" and extra == \"rapidocr\" and platform_system == \"Linux\" and (platform_machine == \"aarch64\" or platform_machine == \"x86_64\") or sys_platform == \"darwin\" and platform_machine == \"x86_64\" and python_version < \"3.10\" and extra == \"rapidocr\" or platform_machine == \"aarch64\" and python_version < \"3.10\" and extra == \"rapidocr\" and platform_system == \"Linux\""
+markers = "python_version < \"3.13\" and extra == \"rapidocr\" and sys_platform == \"darwin\" and platform_machine == \"x86_64\""
 files = [
     {file = "rapidocr_onnxruntime-1.4.4-py3-none-any.whl", hash = "sha256:971d7d5f223a7a808662229df1ef69893809d8457d834e6373d3854bc1782cbf"},
 ]
